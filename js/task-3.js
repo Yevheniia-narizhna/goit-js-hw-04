@@ -1,19 +1,21 @@
 const profile = {
   username: "Jacob",
   playTime: 300,
-};
 
-changeUsername(newName)
-for (const name of username) {
-    username = newName;
-}
-updatePlayTime(hours)
-for (const name of username) {
-    playTime += hours;
-}
 
-getInfo()
-return <Username> has <amount> active hours!
+  changeUsername(newName) {
+      this.username = newName;
+  },
+
+  updatePlayTime(hours) {
+    this.playTime += hours;
+  },
+
+
+  getInfo() {
+    return `${this.username} has ${this.playTime} active hours!`
+  }
+}
 
 
 
